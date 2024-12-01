@@ -1,7 +1,7 @@
 # Day 1 solutions.
 
 # Define function.
-def day_1_solution(input:str ="./inputs/day_1.txt", part_a:bool = True):
+def day_1_solution(input:str ="./inputs/day_1.txt", part_a:bool = True) -> int:
     """Function for the day 1 solution.
 
     Args:
