@@ -6,6 +6,7 @@ def day_1_solution(input:str ="./inputs/day_1.txt", part_a:bool = True):
 
     Args:
         input(str): The input txt file.
+        part_a(bool): Is this for Part A?
 
     Returns:
         int: The sum of the differences between the two lists.
