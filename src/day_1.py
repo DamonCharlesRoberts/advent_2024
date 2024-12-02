@@ -1,5 +1,8 @@
 # Day 1 solutions.
 
+# Import dependencies.
+from utils.input import two_lists
+
 # Define function.
 def day_1_solution(input:str ="./inputs/day_1.txt", part_a:bool = True):
     """Function for the day 1 solution.
@@ -11,14 +14,7 @@ def day_1_solution(input:str ="./inputs/day_1.txt", part_a:bool = True):
         int: The sum of the differences between the two lists.
     """
     # 1. Open the input file.
-    with open(input) as file:
-        # 2. Create a list for each line in the file.
-        line = [line.rstrip() for line in file]
-        # 3. Split each line and extract the first element and put in list  1.
-        list_one = [int(i.split("   ")[0]) for i in line]
-        # 4. Split each line and extract the first element and put in list  2.
-        list_two = [int(i.split("   ")[1]) for i in line]
-
+    list_one, list_two = two_lists(input=input)
     # 5. Solve the puzzle for part_a.
     if part_a:
         # a. Order the two lists.
