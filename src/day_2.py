@@ -3,12 +3,11 @@
 # Import dependencies.
 from utils.input import rectangular
 
-def day_2(input:str="./inputs/day_2.txt", threshold=0) -> int:
+def day_2(input:str="./inputs/day_2.txt") -> int:
     """Function for day 2 solutions.
 
     Args:
         input(str): The path to the input data.
-        threshold(int): Number of allowable divergences.
 
     Returns:
         int: The solution.
