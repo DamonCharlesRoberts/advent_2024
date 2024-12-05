@@ -9,10 +9,7 @@ def day_1_solution(input:str ="./inputs/day_1.txt", part_a:bool = True) -> int:
 
     Args:
         input(str): The input txt file.
-<<<<<<< HEAD
         part_a(bool): Is this for Part A?
-=======
->>>>>>> a5a7d9d (Day 1.)
 
     Returns:
         int: The sum of the differences between the two lists.
@@ -44,11 +41,11 @@ def day_1_solution(input:str ="./inputs/day_1.txt", part_a:bool = True) -> int:
 try:
     # Test the solution for a.
     assert day_1_solution(input='./inputs/test_input.txt') == 11
-    print(f"Test solution for part a is: {day_1_solution    (input='./inputs/test_input.txt')}")
+    print(f"Test solution for part a is: {day_1_solution(input='./inputs/test_input.txt')}")
     # Compute the solution for a.
     print(f"Solution for part a is: {day_1_solution()}")
 except:
-    print("Part A solution is incorrect.")
+    print(f"Part A test solution is incorrect.")
 
 try:
     # Test the solution for b.
@@ -57,4 +54,4 @@ try:
     # Compute the solution for b.
     print(f"Solution for part b is: {day_1_solution(part_a=False)}")
 except:
-    print("Part B solution is incorrect.")
+    print("Part B test solution is incorrect.")
