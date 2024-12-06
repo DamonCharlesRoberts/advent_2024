@@ -24,7 +24,7 @@ def solution(input:str="./inputs/day_5.txt"):
         ] for i in data if ',' in i and i != ''
     ]
     prints_filtered = []
-    prints_sorted = prints.copy()
+    prints_sorted = []
     # For each list in prints, sort the list.
     # For each row in print command,
     for row in prints:
@@ -42,13 +42,13 @@ def solution(input:str="./inputs/day_5.txt"):
         if not needs_sorting:
             prints_filtered.append(row)
     # Of the lists in the correct order, sum the middle page number for the job.
-    solution = sum([
+    solution_a = sum([
         sum([
             prints_filtered[i][j] for j in range(len(prints_filtered[i])) if j == int((len(prints_filtered[i])-1)/2)
         ]) for i in range(len(prints_filtered))
     ])
     # Return the solution.
-    return solution
+    return solution_a
 
 try:
     assert solution(input="./inputs/test_input.txt")==143
