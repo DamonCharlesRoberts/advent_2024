@@ -1,14 +1,14 @@
 # Day 5 solutions.
 import re
 
-def solution(input:str="./inputs/day_5.txt"):
+def solution(input:str="./inputs/day_5.txt") -> int:
     """Solutions for day 5 puzzle.
 
     Args:
         input(str): String to input path.
 
     Returns:
-
+        int: An integer with the solution.
     """
     # Read in the data.
     with open(input) as f:
